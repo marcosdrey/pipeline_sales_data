@@ -52,6 +52,7 @@ def main():
 
     docs = insert_data_into_collection(collection, data)
     print(f'{len(docs.inserted_ids)} documentos foram inseridos no banco de dados com sucesso.')
+    client.close()
 
 if __name__ == '__main__':
     main()
